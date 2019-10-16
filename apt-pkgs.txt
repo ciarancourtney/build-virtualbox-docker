@@ -1,0 +1,36 @@
+gcc
+g++
+iasl
+xsltproc
+libxml2-dev
+python3-dev
+python3.6-dev
+libidl-dev
+libssl-dev
+libcurl4-openssl-dev
+libpng-dev
+linux-headers-generic
+libdevmapper-dev
+libcap-dev
+makeself
+
+# 32bit on 64bit deps
+libc6-dev-i386
+lib32gcc1
+gcc-multilib
+lib32stdc++6
+g++-multilib
+
+# guest
+libpam0g-dev
+
+# x11
+libx11-dev
+libxt-dev
+libxext-dev
+libxmu-dev
+libxrandr-dev
+
+# opengl (required even if --disable-opengl)
+mesa-common-dev
+libglu1-mesa-dev
