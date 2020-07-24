@@ -13,13 +13,12 @@ Based on terse [Linux build instructions](https://www.virtualbox.org/wiki/Linux%
 
 ## Usage
 
-### Build Image
+### Build Image and copy SO files to .
 
     docker build --tag vbox-build-image .
-
-### Run Image as Container
-
     docker run --name vbox-build-container vbox-build-image
+    sudo docker cp vbox-build-container:/VirtualBox/out/linux.amd64/release/obj/VBoxPython/VBoxPython.so /usr/lib/virtualbox
+    sudo docker cp vbox-build-container:/VirtualBox/out/linux.amd64/release/obj/VBoxPython3_8/VBoxPython3_8.so /usr/lib/virtualbox
 
 
 ### Install

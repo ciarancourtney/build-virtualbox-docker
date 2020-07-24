@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 # Based on outdated https://www.virtualbox.org/wiki/Linux%20build%20instructions
 
-ARG VIRTUALBOX_VER=6.0.14
+ARG VIRTUALBOX_VER=6.1.8
 COPY apt-pkgs.txt .
 RUN apt-get update && apt-get -yqq upgrade && apt-get -yqq install wget
 RUN sed 's/#.*//' apt-pkgs.txt | xargs apt-get -yqq -- install
